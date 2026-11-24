@@ -1,8 +1,99 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<MoldeMVC_Core.Models.Vuelo>
+
+@{
+    ViewData["Title"] = "Inicio - Aerolínea VIP";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Banner / Buscador VIP con Estilo Ejecutivo -->
+<div class="p-4 p-md-5 mb-5 rounded-4 shadow-lg border border-success border-opacity-25" style="background: linear-gradient(135deg, #0d1f18 0%, #17382b 100%);">
+    <div class="row align-items-center mb-4">
+        <div class="col-md-8">
+            <span class="badge bg-warning text-dark fw-bold px-3 py-2 text-uppercase mb-2" style="letter-spacing: 1px;">
+                <i class="bi bi-star-fill me-1"></i> Servicio Exclusivo & Executive
+            </span>
+            <h1 class="display-5 fw-bold text-white mb-2">
+                Reserva tu Vuelo VIP
+            </h1>
+            <p class="fs-5 text-light text-opacity-75 mb-0">
+                Experiencia de vuelo privada, confort de primera clase y horarios garantizados.
+            </p>
+        </div>
+    </div>
+
+    <!-- Formulario de Búsqueda sobre Tarjeta Blanca Estilizada -->
+    <div class="card border-0 shadow-lg rounded-4">
+        <div class="card-body p-4">
+            <form asp-controller="Vuelos" asp-action="Index" method="get" class="row g-3 align-items-end">
+                <div class="col-md-4">
+                    <label class="form-label fw-bold text-success small text-uppercase" style="letter-spacing: 0.5px;">
+                        <i class="bi bi-geo-alt-fill me-1"></i> Origen
+                    </label>
+                    @Html.DropDownList("origen", (SelectList)ViewBag.Origenes, "Seleccione Origen...", new { @class = "form-select form-select-lg fs-6 border-success-subtle", required = "required" })
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-bold text-success small text-uppercase" style="letter-spacing: 0.5px;">
+                        <i class="bi bi-geo-fill me-1"></i> Destino
+                    </label>
+                    @Html.DropDownList("destino", (SelectList)ViewBag.Destinos, "Seleccione Destino...", new { @class = "form-select form-select-lg fs-6 border-success-subtle", required = "required" })
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-bold text-success small text-uppercase" style="letter-spacing: 0.5px;">
+                        <i class="bi bi-calendar-event me-1"></i> Fecha de Salida
+                    </label>
+                    <input type="date" name="fecha" class="form-control form-control-lg fs-6 border-success-subtle" />
+                </div>
+                <div class="col-12 text-end mt-4">
+                    <button type="submit" class="btn btn-success btn-lg px-5 fw-bold rounded-3 shadow">
+                        <i class="bi bi-search me-2"></i>Buscar Vuelos VIP
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Cabecera de Sección -->
+<div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom border-success border-opacity-25">
+    <div>
+        <h4 class="fw-bold text-dark mb-0">Itinerarios y Próximas Salidas</h4>
+        <small class="text-muted">Vuelos ejecutivos disponibles en flota Embraer Phenom</small>
+    </div>
+    <a asp-controller="Vuelos" asp-action="Index" class="btn btn-sm btn-outline-success fw-bold px-3">
+        Ver Todos los Vuelos
+    </a>
+</div>
+
+<!-- Tarjetas de Vuelos con Apariencia de Pase de Abordar VIP -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    @foreach (var vuelo in Model)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm border border-success border-opacity-25 rounded-3 overflow-hidden">
+                <div class="card-header text-white fw-bold py-3 text-center border-0 fs-5" style="background-color: #17382b;">
+                    <i class="bi bi-airplane me-2"></i>@vuelo.RutaTexto
+                </div>
+                <div class="card-body p-3 bg-white">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted small text-uppercase">Fecha:</span>
+                        <span class="fw-bold text-dark">@vuelo.FechaTexto</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted small text-uppercase">Horario:</span>
+                        <span class="fw-bold text-dark">@vuelo.HorarioTexto</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center pt-2 mt-2 border-top">
+                        <span class="text-muted small text-uppercase">Asientos:</span>
+                        <span class="badge bg-success text-white fw-bold px-2 py-1">
+                            @vuelo.DisponibilidadTexto
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer bg-light border-0 p-3 pt-0">
+                    <a asp-controller="Vuelos" asp-action="Details" asp-route-id="@vuelo._id" class="btn btn-outline-success w-100 fw-bold rounded-2">
+                        Seleccionar Asiento
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
 </div>
