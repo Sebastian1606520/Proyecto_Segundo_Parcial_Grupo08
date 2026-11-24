@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xKUpIaPdYu8=",
+  "dgSpecHash": "cQu7S9Vh/70=",
   "success": true,
-  "projectFilePath": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\MoldeMVC_Core.csproj",
+  "projectFilePath": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_SegundoParcial\\Proyecto_Segundo_Parcial_Grupo08\\src\\MoldeMVC_Core\\MoldeMVC_Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebas\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\Sebas\\.nuget\\packages\\azure.identity\\1.12.1\\azure.identity.1.12.1.nupkg.sha512",

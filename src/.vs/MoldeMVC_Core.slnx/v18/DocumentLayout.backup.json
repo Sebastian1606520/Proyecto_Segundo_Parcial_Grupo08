@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\",
+  "WorkspaceRootPath": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_SegundoParcial\\Proyecto_Segundo_Parcial_Grupo08\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|c:\\espe\\6to semestre\\desarrollo web 36641\\segundo parcial\\clases\\clase6\\para_replicar\\para_replicar\\aerolineavip_mogongodb-netcore\\moldemvc_core\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|solutionrelative:moldemvc_core\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|c:\\users\\sebas\\onedrive\\desktop\\proyecto_segundoparcial\\proyecto_segundo_parcial_grupo08\\src\\moldemvc_core\\data\\aerolineamongocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|solutionrelative:moldemvc_core\\data\\aerolineamongocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|c:\\espe\\6to semestre\\desarrollo web 36641\\segundo parcial\\clases\\clase6\\para_replicar\\para_replicar\\aerolineavip_mogongodb-netcore\\moldemvc_core\\views\\vuelos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|solutionrelative:moldemvc_core\\views\\vuelos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|c:\\espe\\6to semestre\\desarrollo web 36641\\segundo parcial\\clases\\clase6\\para_replicar\\para_replicar\\aerolineavip_mogongodb-netcore\\moldemvc_core\\views\\vuelos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|solutionrelative:moldemvc_core\\views\\vuelos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|c:\\espe\\6to semestre\\desarrollo web 36641\\segundo parcial\\clases\\clase6\\para_replicar\\para_replicar\\aerolineavip_mogongodb-netcore\\moldemvc_core\\controllers\\vueloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|solutionrelative:moldemvc_core\\controllers\\vueloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|c:\\users\\sebas\\onedrive\\desktop\\proyecto_segundoparcial\\proyecto_segundo_parcial_grupo08\\src\\moldemvc_core\\models\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CFBC818-9DEB-E275-F30C-322BE0B2FB35}|MoldeMVC_Core\\MoldeMVC_Core.csproj|solutionrelative:moldemvc_core\\models\\vuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,55 +33,33 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MoldeMVC_Core\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MoldeMVC_Core\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-24T01:37:41.23Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Views\\Vuelos\\Index.cshtml",
-              "RelativeDocumentMoniker": "MoldeMVC_Core\\Views\\Vuelos\\Index.cshtml",
-              "ToolTip": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Views\\Vuelos\\Index.cshtml",
-              "RelativeToolTip": "MoldeMVC_Core\\Views\\Vuelos\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-24T01:31:05.477Z",
+              "DocumentIndex": 0,
+              "Title": "AerolineaMongoContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_SegundoParcial\\Proyecto_Segundo_Parcial_Grupo08\\src\\MoldeMVC_Core\\Data\\AerolineaMongoContext.cs",
+              "RelativeDocumentMoniker": "MoldeMVC_Core\\Data\\AerolineaMongoContext.cs",
+              "ToolTip": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_SegundoParcial\\Proyecto_Segundo_Parcial_Grupo08\\src\\MoldeMVC_Core\\Data\\AerolineaMongoContext.cs",
+              "RelativeToolTip": "MoldeMVC_Core\\Data\\AerolineaMongoContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwCMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T16:30:26.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Views\\Vuelos\\Details.cshtml",
-              "RelativeDocumentMoniker": "MoldeMVC_Core\\Views\\Vuelos\\Details.cshtml",
-              "ToolTip": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Views\\Vuelos\\Details.cshtml",
-              "RelativeToolTip": "MoldeMVC_Core\\Views\\Vuelos\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-24T01:30:08.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VuelosController.cs",
-              "DocumentMoniker": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Controllers\\VuelosController.cs",
-              "RelativeDocumentMoniker": "MoldeMVC_Core\\Controllers\\VuelosController.cs",
-              "ToolTip": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\Controllers\\VuelosController.cs",
-              "RelativeToolTip": "MoldeMVC_Core\\Controllers\\VuelosController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAA6AAAAAAAAAA==",
+              "Title": "Vuelo.cs",
+              "DocumentMoniker": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_SegundoParcial\\Proyecto_Segundo_Parcial_Grupo08\\src\\MoldeMVC_Core\\Models\\Vuelo.cs",
+              "RelativeDocumentMoniker": "MoldeMVC_Core\\Models\\Vuelo.cs",
+              "ToolTip": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_SegundoParcial\\Proyecto_Segundo_Parcial_Grupo08\\src\\MoldeMVC_Core\\Models\\Vuelo.cs",
+              "RelativeToolTip": "MoldeMVC_Core\\Models\\Vuelo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-24T01:20:42.524Z",
+              "WhenOpened": "2026-11-24T16:30:09.914Z",
               "EditorCaption": ""
             }
           ]
