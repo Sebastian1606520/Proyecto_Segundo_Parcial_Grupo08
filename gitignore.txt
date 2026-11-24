@@ -1,11 +1,25 @@
-node_modules/
+## Compilación e intermedios de .NET Core / .NET
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Entorno de desarrollo (Visual Studio / VS Code / Rider)
 .vs/
-session-state/
-obj/
-bin/
-obj/Debug/
-App_Data/
-Web.Debug.config
-Web.Release.config
+.vscode/
+.idea/
 *.user
 *.suo
+*.userosscache
+*.sln.docstates
+
+## Archivos de entorno y configuraciones locales
+appsettings.Development.json
+appsettings.Local.json
+
+## Reglas que tenías previamente
+node_modules/
+App_Data/
+session-state/
+Web.Debug.config
+Web.Release.config
