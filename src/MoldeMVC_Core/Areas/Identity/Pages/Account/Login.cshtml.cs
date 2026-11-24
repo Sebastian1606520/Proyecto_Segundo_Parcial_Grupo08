@@ -60,7 +60,6 @@ namespace MoldeMVC_Core.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
-
             //******************** Campo para ingresar el nombre de usuario ******************
             [Required]
             [Display(Name = "Usuario")]

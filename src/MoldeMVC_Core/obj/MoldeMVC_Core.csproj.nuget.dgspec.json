@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_Segundo_Parcial_Grupo08\\MoldeMVC_Core\\MoldeMVC_Core\\MoldeMVC_Core.csproj": {}
+    "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\MoldeMVC_Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_Segundo_Parcial_Grupo08\\MoldeMVC_Core\\MoldeMVC_Core\\MoldeMVC_Core.csproj": {
+    "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\MoldeMVC_Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_Segundo_Parcial_Grupo08\\MoldeMVC_Core\\MoldeMVC_Core\\MoldeMVC_Core.csproj",
+        "projectUniqueName": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\MoldeMVC_Core.csproj",
         "projectName": "MoldeMVC_Core",
-        "projectPath": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_Segundo_Parcial_Grupo08\\MoldeMVC_Core\\MoldeMVC_Core\\MoldeMVC_Core.csproj",
+        "projectPath": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\MoldeMVC_Core.csproj",
         "packagesPath": "C:\\Users\\Sebas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto_Segundo_Parcial_Grupo08\\MoldeMVC_Core\\MoldeMVC_Core\\obj\\",
+        "outputPath": "C:\\ESPE\\6to Semestre\\Desarrollo WEB 36641\\Segundo Parcial\\Clases\\Clase6\\Para_Replicar\\Para_Replicar\\AerolineaVIP_MogongoDB-NetCore\\MoldeMVC_Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,27 +55,36 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.22, )"
+              "version": "[9.0.*, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.22, )"
+              "version": "[9.0.*, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[9.0.22, )"
+              "version": "[9.0.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.*, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.22, )"
+              "version": "[9.0.*, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[9.0.22, )"
+              "version": "[9.0.*, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.*, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.14.1, )"
             }
           },
           "imports": [

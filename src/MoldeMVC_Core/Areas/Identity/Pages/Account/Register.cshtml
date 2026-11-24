@@ -12,7 +12,7 @@
             <h2>Create a new account.</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-
+            @* Nuevo campo para el usuario *@
             <div class="form-floating mb-3">
                 <input asp-for="Input.UserName" class="form-control" autocomplete="username" aria-required="true" placeholder="usuario" />
                 <label asp-for="Input.UserName">Usuario</label>

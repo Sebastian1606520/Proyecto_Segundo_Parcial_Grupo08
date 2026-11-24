@@ -1,0 +1,56 @@
+﻿@using MoldeMVC_Core.Models
+@model Vuelo
+
+@{
+    ViewData["Title"] = "Detalle del vuelo";
+}
+
+<h1>Detalle del vuelo</h1>
+
+<div>
+    <h4>@Model.RutaTexto</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Fecha</dt>
+        <dd class="col-sm-9">@Model.DiaTexto @Model.FechaTexto</dd>
+        <dt class="col-sm-3">Horario</dt>
+        <dd class="col-sm-9">@Model.HorarioTexto</dd>
+        <dt class="col-sm-3">Origen</dt>
+        <dd class="col-sm-9">@Model.OrigenTexto</dd>
+        <dt class="col-sm-3">Destino</dt>
+        <dd class="col-sm-9">@Model.DestinoTexto</dd>
+        <dt class="col-sm-3">Estado</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.estado)</dd>
+        <dt class="col-sm-3">Precio</dt>
+        <dd class="col-sm-9">@Model.PrecioTexto</dd>
+        <dt class="col-sm-3">Aeronave</dt>
+        <dd class="col-sm-9">@Model.AeronaveTexto</dd>
+        <dt class="col-sm-3">Disponibilidad</dt>
+        <dd class="col-sm-9"><span class="badge @Model.ClaseDisponibilidad">@Model.DisponibilidadTexto</span></dd>
+    </dl>
+</div>
+
+<h5>Asientos</h5>
+<table class="table table-sm w-auto">
+    <thead>
+        <tr>
+            <th>Asiento</th>
+            <th>Ubicación</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asiento in Model.Asientos)
+        {
+            <tr>
+                <td>@asiento.Codigo</td>
+                <td>@asiento.Ubicacion</td>
+                <td><span class="badge @asiento.ClaseEstado">@asiento.EstadoTexto</span></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>

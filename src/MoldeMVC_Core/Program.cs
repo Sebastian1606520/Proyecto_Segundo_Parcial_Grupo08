@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MoldeMVC_Core.Data;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
+using MoldeMVC_Core.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +13,28 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+//***************** MongoDB: datos de la aerolinea*************************************
+builder.Services.Configure<MongoDbSettings>(
+    builder.Configuration.GetSection("MongoDb"));
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
+{
+    var settings = sp.GetRequiredService<IOptions<MongoDbSettings>>().Value;
+    return new MongoClient(settings.ConnectionString);
+});
+
+builder.Services.AddSingleton(sp =>
+{
+    var settings = sp.GetRequiredService<IOptions<MongoDbSettings>>().Value;
+    var client = sp.GetRequiredService<IMongoClient>();
+    return client.GetDatabase(settings.DatabaseName);
+});
+
+builder.Services.AddSingleton<AerolineaMongoContext>();
+
+
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    //.AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
+//    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 //******************** Configurar la autenticación *********************************
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
@@ -31,7 +53,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.User.RequireUniqueEmail = false;
 }).AddEntityFrameworkStores<ApplicationDbContext>();
 //*******************************************************************************
-
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -52,7 +74,6 @@ using (var scope = app.Services.CreateScope())
     }
 }
 //***********************************************************************
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

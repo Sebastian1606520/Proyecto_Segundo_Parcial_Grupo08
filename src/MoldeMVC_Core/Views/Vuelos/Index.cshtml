@@ -1,0 +1,40 @@
+﻿@using MoldeMVC_Core.Models
+@model IEnumerable<Vuelo>
+
+@{
+    ViewData["Title"] = "Vuelos";
+}
+
+<h1>Vuelos</h1>
+
+<table class="table table-hover align-middle">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Ruta</th>
+            <th>Horario</th>
+            <th>Aeronave</th>
+            <th>Precio</th>
+            <th>Disponibilidad</th>
+            <th>Estado</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FechaTexto</td>
+                <td>@item.RutaTexto</td>
+                <td>@item.HorarioTexto</td>
+                <td>@item.AeronaveTexto</td>
+                <td>@item.PrecioTexto</td>
+                <td><span class="badge @item.ClaseDisponibilidad">@item.DisponibilidadTexto</span></td>
+                <td>@Html.DisplayFor(modelItem => item.estado)</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item._id">Detalle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
